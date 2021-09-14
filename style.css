@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(59, 59, 59);
+}
+
+.container {
+  width: 80%;
+  background-color: rgb(59, 59, 59);
+}
+
+.lights {
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.light {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+}
+
+.red {
+  background: #c0392b;
+  animation: glow-red 1s infinite;
+}
+.yellow {
+  background: #f1c40f;
+  animation: glow-yellow 1s infinite;
+}
+.blue {
+  background: #64fcfe;
+  animation: glow-blue 1s infinite;
+}
+.green {
+  background: #2ecc71;
+  animation: glow-green 1s infinite;
+}
+
+@keyframes glow-red {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #c0392b;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+@keyframes glow-yellow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #f1c40f;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+@keyframes glow-blue {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #64fcfe;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+@keyframes glow-green {
+  0%,
+  100% {
+    box-shadow: 0 0 20px 5px #2ecc71;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+.lights .light.inative {
+  animation: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 2rem;
+}
+
+main h1 {
+  color: white;
+}
+
+main .buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+main .buttons button {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 200ms;
+  border: 2px solid palevioletred;
+}
+
+main button:hover {
+  color: white;
+  background-color: rgb(59, 59, 59);
+}
+
+main .interval {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  align-items: center;
+}
+
+main .interval input {
+  padding: 0.5rem;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* main .interval button {
+  padding: 0.5rem;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid palevioletred;
+  cursor: pointer;
+  transition: 200ms;
+} */

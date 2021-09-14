@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Light</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="lights">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light blue"></div>
+        <div class="light green"></div>
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light blue"></div>
+        <div class="light green"></div>
+      </div>
+      <main>
+        <h1>Christmas Lights</h1>
+        <div class="buttons">
+          <button id="play">On</button>
+          <button id="stop">Off</button>
+        </div>
+        <div class="interval">
+          <p>10ms</p>
+          <input
+            type="range"
+            min="10"
+            max="5000"
+            id="interval"
+            placeholder="Enter a ms time interval"
+            oninput="setIntervalOfLights()"
+          />
+          <p>5000ms</p>
+          <!-- <button onclick="setIntervalOfLights()">Ok</button> -->
+        </div>
+      </main>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
