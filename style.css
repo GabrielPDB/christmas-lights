@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   background-color: rgb(59, 59, 59);
 }
 
@@ -27,12 +27,12 @@ body {
   background-color: rgb(59, 59, 59);
   display: flex;
   justify-content: center;
-  gap: 3vw;
+  gap: 0.5rem;
 }
 
 .light {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: white;
 }
