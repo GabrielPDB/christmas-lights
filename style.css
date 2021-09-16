@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  animation: 200ms;
 }
 
 .light {
@@ -35,11 +36,13 @@ body {
   height: 30px;
   border-radius: 50%;
   background: white;
+  animation: 200ms;
 }
 
 .red {
   background: #c0392b;
   animation: glow-red 1s infinite;
+  animation-delay: 500ms;
 }
 .yellow {
   background: #f1c40f;
@@ -48,6 +51,7 @@ body {
 .blue {
   background: #64fcfe;
   animation: glow-blue 1s infinite;
+  animation-delay: 500ms;
 }
 .green {
   background: #2ecc71;
@@ -93,6 +97,8 @@ body {
 
 .lights .light.inative {
   animation: none;
+  background-color: gray;
+  animation: 200ms;
 }
 
 main {
