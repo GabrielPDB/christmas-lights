@@ -14,10 +14,12 @@ const Lights = {
   turnOn() {
     lights.forEach(light => {
       light.classList.remove('inative')
+      light.style.animationPlayState = 'running'
     })
   },
   turnOff() {
     lights.forEach(light => {
+      light.style.animationPlayState = 'paused'
       light.classList.add('inative')
     })
   }
